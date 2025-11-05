@@ -3,6 +3,6 @@ count = 0
 
 while count < n:
     count += 1
-    s = count * 
+    pass
     
     print(count)
