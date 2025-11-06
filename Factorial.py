@@ -1,8 +1,8 @@
-n = int ( input ('write your num: '))
+n = int (input ( 'Write your number: '))
 count = 0
-
+result = 1
 while count < n:
     count += 1
-    pass
+    result *= count
     
-    print(count)
+print(result)
