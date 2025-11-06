@@ -1,36 +1,23 @@
-# 2.
+# num = int (input('write a num: '))
 
-# x = int (input('type a number: ')) 
-# y = int (input('type secound number: '))
-# print(f'''
-#       {x} + {y} = {x + y}\n
-#       {x} - {y} = {x - y}\n
-#       {x} * {y} = {x * y}\n
-#       {x} \ {y} = {x / y}
-#       ''')  
-
-# 3.
-# x = int (input('type a number: '))
-
-# if x % 2 == 0:
-#     print(f'{x} is even')
+# if num <= 1:
+#     print(f'{num} is not prime')
 # else:
-#     print(f'{x} is odd')  
+#     for i in range (2, int(num ** 0.5)+1):
+#         if num % i == 0:
+#             print(f'{num} is not prime')
+#             break
+#         else:
+#             print(f'{num} is prime')
+#             break
 
-# 4.
-# n = int ( input ('write your num: '))
-# count = 0
 
-# while count < n:
-#     count += 1
-#     pass
+for w in "hello4444wsnsch":
+    # if w.isdigit():
+    #     print(w)
     
-#     print(count)
-
-
-nums = [1 , 2, 3, 4 , 5,10]
-result = 0
-for i in nums:
-    result += i
+    try:
+        print(int (w))
     
-print(result)
+    except:
+        print('is not digit', w)
