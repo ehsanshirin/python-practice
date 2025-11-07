@@ -1,21 +1,34 @@
-def sum_num():
+def sum_nums(nums):
+    print(sum(nums))
+
+def minus_nums(nums):
     pass
 
+import math
+from math import prod
+def multiply(nums):
+    print(math.prod(nums))
+    
+def sum_nums(nums):
+    print(sum(nums))
+     
 #ic = input command 
 ic = input ("Write your calculation: ").split(' ')
-tmp_num = 0
+nums = []
 for i in ic:
     if i.isdigit():
-        print('ok', i)
-        
-        tmp_num = int(i)
-    else:
-        print('no', i)
-        if i == '+':
-            
-            
+        nums.append(int(i))
     
+for i in ic:
+    if i == '+':
+        sum_nums(nums)
+    if i == '-':
+        pass
+    if i == '*':
+        multiply(nums)
+    if i == '/':
+        pass    
 
-# def sum_num():
-#     pass
-
+# else:
+#         print('''ERROR!!\nCalculation is not possible!''')
+#         break
