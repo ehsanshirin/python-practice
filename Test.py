@@ -1,7 +1,7 @@
-def sum_nums(nums):
-    print(sum(nums))
-    
-    
-my_list = [10 , 20 , 30]
+chars = ['a', 'b', 'a', 'c', 'd', 'e', 'b', 
+'a', 'e', 'f', 'g', 'd', 'h', 'e', 'f']
 
-sum_nums(my_list)
+
+frequency = {
+    
+}
