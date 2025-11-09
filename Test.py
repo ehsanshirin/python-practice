@@ -1,7 +1,4 @@
-def sum_nums(nums):
-    print(sum(nums))
-    
-    
-my_list = [10 , 20 , 30]
+def my_func(n):
+    return lambda a : a * n
 
-sum_nums(my_list)
+print(my_func(3)(5))
