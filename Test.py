@@ -1,8 +1,12 @@
-class test:
-    pass
+class Laptop:
+    def __init__(self,brand):
+        self.brand = brand
+    
+    def set_specs(self,ram,cpu):
+        self.ram = ram
+        self.cpu = cpu
 
-t1 = test()
-t2 = test()
 
-t1.x = 5
-print(hasattr(t2,'x'))
+pc_1 = Laptop('HP')
+pc_1.set_specs('ram is 8', 'cpu is core i 5')
+print(pc_1.brand, pc_1.ram, pc_1.cpu)
