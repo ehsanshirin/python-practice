@@ -25,7 +25,30 @@ class BankAccount :
         print(f'Owner: {self.owner}')
         print(f'Balance: {self.balance}')
 
-acc1 = BankAccount('Sara')
-acc1.deposit(50)
-acc1.withdraw(20)
+
+    def transfer(self, amount, target_account):
+        if amount <= 0:
+            print('Invalid transfer amount')
+            return
+        if amount > self.balance:
+            print('Insufficient funds for transfer')
+            return
+        self.balance -= amount
+        target_account.balance += amount
+
+
+        print (f'{self.owner} transferred {amount} to {target_account.owner}')
+        print(f'{self.owner} balance: {self.balance}')
+        print(f'{target_account.owner} balance: {target_account.balance}')
+
+
+acc1 = BankAccount('Ali')
+acc2 = BankAccount('Sara')
+
+acc1.deposit(100)
+acc2.deposit(50)
+
+acc1.transfer(30,acc2)
+
 acc1.info()
+acc2.info()
