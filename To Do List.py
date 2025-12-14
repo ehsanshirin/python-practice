@@ -2,10 +2,11 @@
     def __init__(self):
         self.todolist = {}
         
-    def add(self, title):
-        self.todolist[title] = input('type describtion: ')
-        
-        print(f'{title} add to list')
+    def add(self):
+        self.title = input('type describtion: ')
+        self.describt = input('Type yore describt: ')
+        self.todolist[self.title] = self.describt
+        print(f'{self.title} add to list')
         
     
     def remove(self, title):
@@ -14,12 +15,12 @@
 
     
     def show(self):
-        print('Your List: ')
-        for i in self.todolist:
-            print(i)
+        print(self.todolist)
+        # for i in self.todolist:
+        #     print(i)
             
             
 myList = ToDoList()
-myList.add('Python')
+myList.add()
 
 myList.show()
