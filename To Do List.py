@@ -8,19 +8,19 @@
             print('There is a job posted.')
             return
         
-        self.title = title
+        
         self.describt = input('Describt: ')
-        self.todolist[self.title] = self.describt
-        print(f'{self.title} add to list')
+        self.todolist[title] = self.describt
+        print(f'{title} add to list')
         
     
     def remove(self):
-        self.title = input('Type Your Title: ')
-        if self.title not in self.todolist.keys():
-            print(f'{self.title} not find.')
+        title = input('Type Your Title: ')
+        if title not in self.todolist.keys():
+            print(f'{title} not find.')
             return
-        self.todolist.pop(self.title)
-        print(f'{self.title} remove from list')
+        self.todolist.pop(title)
+        print(f'{title} remove from list')
         
         
     def done(self):
