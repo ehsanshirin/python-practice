@@ -1,35 +1,21 @@
 class Shop:
-    def __init__(self):
-        self.products = {}
+    def __init__(self, product_name, stock):
+        pass
 
     def add_product(self, product_name, stock):
-        
-        if product_name in self.products:
-            self.products[product_name] += stock
-        else:
-            self.products[product_name] = stock
+        pass
 
-    def reduce_stock(self):
-        product_name = input('type name product: ')
-        if product_name not in self.products:
-            print('error')
-            return
-        
-        amount = int (input('type amount: '))
-        if amount > self.products[product_name]:
-            print('Not Find')
-            return
-        
-        else:
-            self.products[product_name] -= amount
-            print(f'{amount} units removed from {product_name}')
+    def reduce_srock(self, product_name, amount):
+        pass
 
-    def show_products(self):
-        for product_name , stock in self.products.items():
-            print(f'Product: {product_name}, Stock: {stock}')
+    def show
+        
 
-shop = Shop()
-shop.add_product()
-shop.add_product()
-shop.reduce_stock()
-shop.show_products()
+
+
+class Custumer:
+    pass
+
+
+class Order:
+    pass
