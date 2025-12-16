@@ -2,9 +2,7 @@ class Shop:
     def __init__(self):
         self.products = {}
 
-    def add_product(self):
-        product_name = input('type name product: ')
-        stock = int (input('Initial warehouse inventory: '))
+    def add_product(self, product_name, stock):
         
         if product_name in self.products:
             self.products[product_name] += stock
@@ -29,3 +27,9 @@ class Shop:
     def show_products(self):
         for product_name , stock in self.products.items():
             print(f'Product: {product_name}, Stock: {stock}')
+
+shop = Shop()
+shop.add_product()
+shop.add_product()
+shop.reduce_stock()
+shop.show_products()
