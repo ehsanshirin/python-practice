@@ -1,11 +1,12 @@
-class Car:
-    def __init__(self, year, brand):
-        self.year = year
-        self.brand = brand
+class Person:
+    def __init__(self, name , age):
+        self.name = name
+        self.age = age
 
-    def show(self):
-        print(f'Brand: {self.brand}, Year: {self.year}')
+    def greet(self):
+        print(f'hello{self.name} , with {self.age}')
 
 
-x = Car(1442, 'Benz')
-x.show()
+p1 = Person('Ehsan',34)
+
+p1.greet()
