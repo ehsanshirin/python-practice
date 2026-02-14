@@ -1,12 +1,20 @@
-class Person:
-    def __init__(self, name , age):
-        self.name = name
-        self.age = age
+my_friends = {
+    'ali': 10,
+    'hasan': 20,
+    'hosein': 30
+}
 
-    def greet(self):
-        print(f'hello{self.name} , with {self.age}')
+get_name = input('type name your frinds: ')
+age_person = int(input('type his age: '))
 
-
-p1 = Person('Ehsan',34)
-
-p1.greet()
+while True:
+    if my_friends.get(get_name):
+        while age_person == my_friends[get_name]:
+            print('gooood')
+            # if age_person < my_friends[get_name]:
+            #     print('عدد کوچک هست')
+            # else:
+            #     print('عدد زیاد هست')
+    else:
+        print('no')
+        pass
