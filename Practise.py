@@ -4,7 +4,6 @@ my_friends = {
     'hosein': 30
 }
 
-<<<<<<< HEAD
 while True:
     get_name = input('type name your frinds: ').strip().lower()
     
@@ -37,18 +36,3 @@ while True:
         print('Not Find, Try again')
     
     print('_'*30)
-=======
-get_name = input('type name your frinds: ')
-age_person = int(input('type his age: '))
-
-while True:
-    if my_friends.get(get_name):
-        while age_person == my_friends[get_name]:
-            if age_person < my_friends[get_name]:
-                print('عدد کوچک هست')
-            else:
-                print('عدد زیاد هست')
-    else:
-        print('no')
-        pass
->>>>>>> c08b5f527b76e56e5a4a733a7a8a3682f1ad89ed
