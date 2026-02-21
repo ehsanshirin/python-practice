@@ -4,17 +4,35 @@ my_friends = {
     'hosein': 30
 }
 
-get_name = input('type name your frinds: ')
-age_person = int(input('type his age: '))
-
 while True:
-    if my_friends.get(get_name):
-        while age_person == my_friends[get_name]:
-            print('gooood')
-            # if age_person < my_friends[get_name]:
-            #     print('عدد کوچک هست')
-            # else:
-            #     print('عدد زیاد هست')
+    get_name = input('type name your frinds: ').strip().lower()
+    
+    if get_name == 'exit':
+        print('Goodbye!')
+        break
+    
+    if get_name in my_friends:
+        try:
+            age_guess = int(input(f"How Much Age's {get_name}: "))
+            real_age = my_friends[get_name]
+            
+            while age_guess == real_age:
+                
+                if age_guess < real_age:
+                    print('is Low, Try again: ')
+                    
+                elif age_guess > real_age:
+                    print('is big, try again: ')
+                                        
+                else:
+                    print('is Good')
+                    break
+                    
+
+        except ValueError:
+            print('Type Only Number!')
+
     else:
-        print('no')
-        pass
+        print('Not Find, Try again')
+    
+    print('_'*30)
