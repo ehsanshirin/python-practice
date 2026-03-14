@@ -1,9 +1,24 @@
-# names = ["Mina", "Kian", "Nazi", "Arash"]
+class Car:
+    def __init__(self, brand, model, year, color = 'Black'):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.color = color
+        
+    def attribute(self):
+        print(f'''
+              \rBrand: {self.brand}
+              \rModel: {self.model}
+              \rYear: {self.year}
+              \rColor: {self.color}
+              ''')
+        
+    def new_color(self, color):
+        self.color = color
+        
+c1 = Car('Benz', 'S200', 2026)
+c2 = Car('BMW', 'Sport', 2025)
+c3 = Car('WW', 'Shasi', '2026')
 
-# for i , lis in enumerate(names, start=1):
-#     print(f'{i} - {lis}')
-
-import tools
-
-lis = [10,12,34,25,15]
-print(tools.avrage(lis))
+c1.new_color('White')
+c1.attribute()
